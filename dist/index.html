@@ -1,17 +1,159 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QR Show - March 2025 @ NYC</title>
-</head>
-<body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!--···········view···source···is···less···fun···········-->
+        <meta name="description" content="qr show &#x2736;&#xFE0E; 03.16.25 &#x2736;&#xFE0E; nyc">
+        <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="https://pub-00bc7a7c079d493391109fe14bbac1f3.r2.dev/ogbasilisk.gif">
+        <meta property="og:title" content="qr&nbsp;show&nbsp;&#x2736;&#xFE0E;&nbsp;03.16.25&nbsp;&#x2736;&#xFE0E;&nbsp;nyc">
+        <meta property="og:image:alt" content="a basilisic clutches a q r code cube">
+        <meta property="og:image:type" content="image/gif">
+        <meta property="og:type" content="website">
+        <meta name="twitter:image" content="https://pub-00bc7a7c079d493391109fe14bbac1f3.r2.dev/ogbasilisk.gif">
+        <meta name="twitter:title" content="qr&nbsp;show&nbsp;&#x2736;&#xFE0E;&nbsp;03.16.25&nbsp;&#x2736;&#xFE0E;&nbsp;nyc">
+        <meta property="twitter:domain" content="qrshow.nyc">
+        <meta name="twitter:card" content="summary_large_image">
+        <title>qr show &#x2736;&#xFE0E; 03.16.25 &#x2736;&#xFE0E; nyc</title>
+        <link rel="icon" type="image/png" href="favicon.png">
+        <style>
+            @font-face{
+                src: url("ogcourier.woff2");
+                font-family: courier;
+            }
+            *::selection{
+                background-color: #fff;
+                color: #000;
+            }
+            body{
+                justify-content: center;
+                background-color: #000;
+                flex-direction: column;
+                box-sizing: border-box;
+                scrollbar-width: none;
+                font-family: courier;
+                align-items: center;
+                text-align: center;
+                min-height: 100dvh;
+                padding: 20px 0;
+                cursor: zoom-in;
+                display: flex;
+                width: 100vw;
+                color: #fff;
+                margin: 0;
+                gap: 20px;
+            }
+            #image-wrapper{
+                width: min(38rem, 100vw);
+                aspect-ratio: 1 / 1;
+                position: relative;
+            }
+            #basilisk{
+                position: absolute;
+                user-select: none;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+            }
+            #mask{
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
 
-<h1>QR Show - March 2025 @ NYC</h1>
+                mask-position: -9999px -9999px;
+                mask-image: url("cursor.webp");
+                image-rendering: pixelated;
+                mix-blend-mode: difference;
+                mask-repeat: no-repeat;
+                position: absolute;
+                user-select: none;
+                mask-size: cover;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+            }
+            #text{
+                cursor: text;
+                margin: 0;
+            }
+            #email{
+                all: unset;
+                transition: background-color 0.5s ease, color 0.5s ease;
+                text-align: right;
+                cursor: pointer;
+                width: 18ch;
+            }
+            @media(hover){
+                #email:focus-visible, #email:hover{
+                    transition: background-color 0s, color 0s;
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="image-wrapper" role="none">
+            <img id="basilisk" src="basilisk.gif" alt="a mischievous basilisk guards six secrets. it will only share them with inquisitive friends.">
+            <img id="mask" src="mask.png" alt="a strange glow reveals something familiar, but it is too occluded to see entirely.">
+        </div>
+        <p id="text" aria-label="event details and contact information.">
+            qr&nbsp;show&nbsp;&#x2736;&#xFE0E;&nbsp;03.16.25&nbsp;&#x2736;&#xFE0E;&nbsp;nyc<br aria-hidden="true">
+            more&nbsp;information&nbsp;coming<br aria-hidden="true">
+            <span aria-hidden="true">???&nbsp;</span><button id="email" aria-label="email">hi@greg.technology</button>
+        </p>
+        <script>
+            console.conspire = () => {console.log(`
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⡀⠀⠀⠀⠀⠀⠀⢀⠀⠀⡀⠀⢀⠀⢀⡀⣤⡢⣤⡤⡀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡄⡄⠐⡀⠈⣀⠀⡠⡠⠀⣢⣆⢌⡾⢙⠺⢽⠾⡋⣻⡷⡫⢵⣭⢦⣴⠦⠀⢠⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢠⣤⣽⣥⡈⠧⣂⢧⢾⠕⠞⠡⠊⠁⣐⠉⠀⠉⢍⠀⠉⠌⡉⠀⠂⠁⠱⠉⠁⢝⠻⠎⣬⢌⡌⣬⣡⣀⣢⣄⡄⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⢸⣿⣿⢿⣾⣯⣑⢄⡂⠀⠄⠂⠀⠀⢀⠀⠀⠐⠀⠀⠀⠀⠀⠀⠀⠀⠄⠐⠀⠀⠀⠀⣄⠭⠂⠈⠜⣩⣿⢝⠃⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣻⡟⠏⠀⠚⠈⠚⡉⡝⢶⣱⢤⣅⠈⠀⠄⠀⠀⠀⠀⠀⠠⠀⠀⡂⠐⣤⢕⡪⢼⣈⡹⡇⠏⠏⠋⠅⢃⣪⡏⡇⡍⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠺⣻⡄⠀⠀⠀⢠⠌⠃⠐⠉⢡⠱⠧⠝⡯⣮⢶⣴⣤⡆⢐⣣⢅⣮⡟⠦⠍⠉⠀⠁⠐⠀⠀⠀⠄⠐⠡⣽⡸⣎⢁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢈⡻⣧⠀⠁⠐⠀⠀⠀⠀⠀⠀⠊⠀⠕⢀⡉⠈⡫⠽⡿⡟⠿⠟⠁⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠬⠥⣋⡯⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⡀⣾⡍⠕⡀⠀⠀⠀⠄⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠥⣤⢌⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠄⢀⠀⢝⢞⣫⡆⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣽⡶⡄⠐⡀⠀⠀⠀⠀⠀⠀⢀⠀⠄⠀⠀⠀⠄⠁⠇⣷⡆⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡸⢝⣮⠍⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⠀⢾⣷⠀⠠⡀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠁⡁⠀⠀⣾⡥⠖⠀⠀⠀⠂⠀⠀⠀⠀⠀⠁⠀⡀⠁⠀⠀⠻⢳⣻⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣞⡙⠨⣀⠠⠄⠀⠂⠀⠀⠀⠈⢀⠀⠀⠀⠀⠀⠤⢚⢢⣟⠀⠀⠀⠀⡐⠀⠀⡀⠀⠀⠀⠀⠁⠈⠌⠊⣯⣮⡏⠡⠂⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣻⡟⡄⡡⣄⠀⠠⠀⠀⡅⠀⠐⠀⡀⠀⡀⠀⠄⠈⠃⠳⠪⠤⠀⠀⠀⠀⡀⠀⠂⠀⠀⠀⠁⠈⢠⣠⠒⠻⣻⡧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠪⡎⠠⢌⠑⡀⠂⠀⠄⠠⠀⠠⠀⠁⡀⠠⠠⡀⣀⠜⢏⡅⠀⠀⡀⠁⠀⠀⠁⠁⠐⠄⡀⢀⠀⠀⠄⢑⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠼⣻⠧⣣⣀⠐⠨⠁⠕⢈⢀⢀⡁⠀⠈⠠⢀⠀⠐⠜⣽⡗⡤⠀⠂⠀⠠⠀⢂⠠⠀⠁⠀⠀⠔⠀⠑⣨⣿⢯⠋⡅⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⡚⣷⣭⠎⢃⡗⠄⡄⢀⠁⠀⠅⢀⢅⡀⠠⠀⢠⡀⡩⠷⢇⠀⡀⠄⡀⠄⠂⠀⠀⠄⠉⡠⠃⠴⠀⠈⢁⣿⡛⡯⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠘⡬⡿⣿⡏⡻⡯⠌⢁⢛⠠⠓⠐⠐⠐⠌⠃⠋⠂⡠⢰⣈⢏⣠⠂⠈⠀⠠⠒⠡⠄⠢⠤⠨⠢⡬⠆⠿⢷⢿⡽⡧⠉⠊⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠺⣷⣺⣗⣿⡶⡎⡅⣣⢎⠠⡅⣢⡖⠴⠬⡈⠂⡨⢡⠾⣣⣢⠀⠀⡹⠄⡄⠄⡇⣰⡖⡊⠔⢹⣄⣿⣭⣵⣿⢷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠩⣿⣿⣲⣿⣷⣟⣼⠟⣬⢉⡠⣪⢜⣂⣁⠥⠓⠚⡁⢶⣷⣠⠂⡄⡢⣀⡐⠧⢆⣒⡲⡳⡫⢟⡃⢪⡧⣟⡟⣯⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢺⠟⢿⢟⢻⡗⡮⡿⣲⢷⣆⣏⣇⡧⣄⢖⠾⡷⣿⣤⢳⢷⣣⣦⡜⠗⣭⢂⠩⣹⢿⡲⢎⡧⣕⣖⣓⣽⡿⡖⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠂⠂⠏⠿⢻⣥⡪⢽⣳⣳⣥⡶⣫⣍⢐⣥⣻⣾⡻⣅⢭⡴⢭⣿⠕⣧⡭⣞⣻⣣⣻⢿⠟⠛⠙⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠋⠫⠯⣍⢻⣿⣿⣷⣕⣵⣹⣽⣿⣷⣇⡏⣿⡿⣍⡝⠵⠯⠁⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠠⠁⠋⢣⠓⡍⣫⠹⣿⣿⣷⡿⠯⠺⠁⠁⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠋⢀⠋⢈⡿⠿⠁⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
-<div>More information to come</div>
+          ✶︎ the basilisk offers to share their secrets ✶︎
+                 https://qrshow.nyc/basilisk.blend
+                    ✶︎ requires blender 4.3.2 ✶︎
 
-<div>more info: <a href="mailto:hi@greg.technology">hi@greg.technology</a></div>
+`)};
 
-</body>
+            const mask = document.getElementById("mask");
+            function moveCursor(e){
+                const rect = mask.getBoundingClientRect();
+                mask.style.maskPosition = `${(e.clientX - rect.left) - (rect.width * 0.5)}px ${(e.clientY - rect.top) - (rect.height * 0.5)}px`;
+            }
+            document.addEventListener("pointermove", moveCursor, {passive: true});
+
+            const email = document.getElementById("email");
+            function copy(){
+                email.textContent = "···········copied!";
+                navigator.clipboard.writeText("hi@greg.technology");
+                setTimeout(() => {email.textContent = "hi@greg.technology"}, 500);
+            };
+
+            window.addEventListener("keydown", e => {if(document.activeElement.id === "email" && (e.key === "Enter" || e.key === " ")){copy()}}, {passive: true});
+            window.addEventListener("touchend", () => {mask.style.maskPosition = "-9999px -9999px"}, {passive: true});
+            mask.addEventListener("touchstart", e => {e.preventDefault(); moveCursor(e)});
+            email.addEventListener("pointerdown", copy, {passive: true});
+        </script>
+    </body>
 </html>
